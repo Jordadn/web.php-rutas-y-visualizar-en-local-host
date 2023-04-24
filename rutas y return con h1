@@ -1,0 +1,6 @@
+
+
+/*aqui se puede escrbirir textos y visualizar en local host */
+route::get('/jordan',function (){
+    return  '<h1>este solo es un texto de prueba</h1>';
+});
