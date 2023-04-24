@@ -1,6 +1,37 @@
 
-
 /*aqui se puede escrbirir textos y visualizar en local host */
+
+
 route::get('/jordan',function (){
     return  '<h1>este solo es un texto de prueba</h1>';
 });
+
+
+
+
+
+/* RUTA CON ARRAY*/
+
+route::get('/arreglo', function (){
+    $arreglo =[
+        'ID' => '3',
+        'DESCRIPCION' => 'Producto1'
+    ];
+    return $arreglo;
+    
+    
+    
+    
+    RUTA CON PARAMETROS VIEW NOMBRE
+    
+    route::get('/nombre/{nombre}',function($nombre){
+    return 'el nombre es: ' .$nombre;
+});
+    
+    
+    
+    
+    
+    
+    
+
